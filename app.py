@@ -13,7 +13,7 @@ db = mysql.connector.connect(
 
 @app.route("/")
 def index():
-    return render_template("form.html")
+    return render_template("index.html")
 
 @app.route("/submit", methods=["POST"])
 def submit():
